@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead Rose Perfumes</title>
+ <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=MedievalSharp&family=Pirata+One&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+        }
+
+        a {
+            color: #f53838;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header / Brand Intro */
+        .header {
+            position: relative;
+            height: 450px;
+            background: url('https://i.pinimg.com/736x/29/6f/03/296f0371e295aaca254e8fe9373d2184.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #f5f5f5;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0,0,0,0.6);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+       .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;      /* makes a perfect circle */
+    border: 3px solid #BBA14F; /* deep red border */
+    object-fit: cover;       /* keeps the image looking clean */
+    margin-bottom: 20px;
+}
+
+
+
+
+        .header h1 {
+            font-family: 'UnifrakturMaguntia', cursive;
+            font-size: 80px;
+            text-align: center;
+            color: #610000;
+            text-shadow: 0 0 20px #4d0000;
+            margin-bottom: 10px;
+         }
+
+        .header p {
+            font-size: 18px;
+            font-family: 'MedievalSharp', cursive;
+            max-width: 600px;
+            margin: 5px auto 0;
+            line-height: 1.25;
+            color:#7A4714;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: #1a1a1a;
+            border: 1px solid #f53838;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-content {
+            padding: 20px;
+        }
+
+        .product-content h3 {
+            margin: 0 0 10px;
+            color: #f53838;
+        }
+
+        .product-content p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .product-content span {
+            font-style: italic;
+            color: #ccc;
+        }
+
+     /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0a0a0a;
+            border-top: 1px solid #f53838;
+        }
+
+   
+      </style>
+</head>
+<body>
+
+    <!-- Header / Brand Intro -->
+    <div class="header">
+        <div class="header-content">
+            <img src="https://i.pinimg.com/736x/e9/b7/26/e9b726f3249128c35aeeb888137f65fc.jpg" alt="Dead Rose Logo" class="logo">
+            <h1>RUBY CURSE</h1>
+            <p>Ruby Curse Is A Perfume Brand Born From The Essence Of Elegance And Mystique, Crafted For Those Who eek Royal, Passionate, And Unforgettable Fragrances.</p>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="products">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="https://thefragrancebook.com/cdn/shop/files/3_a47e3253-927d-4edf-8b20-7255f7bfc017.jpg?v=1745307489" alt="Eclipse">
+            <div class="product-content">
+                <h3>Eclipse</h3>
+                <p><strong>Meaning:</strong> Darkness meeting light</p>
+                <p><strong>Notes:</strong> Black Orchid, Amber, Sandalwood</p>
+                <p><strong>Occasion:</strong> Evening & Parties</p>
+                <p><strong>Vibes:</strong> Mysterious, Seductive</p>
+                <p><strong>Celebrity Match:</strong> Timothée Chalamet</p>
+                <a href="https://www.flipkart.com/riiffs-eclipse-her-unisex-eau-de-perfume-60-parfum-ml/p/itm0e388131c29a8">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="https://soiparfums.com/cdn/shop/files/scarletnewmockup4-1.jpg?v=1735598064&width=1445" alt="Scarlet">
+            <div class="product-content">
+                <h3>Scarlet</h3>
+                <p><strong>Meaning:</strong> Passion & Love</p>
+                <p><strong>Notes:</strong> Rose, Cinnamon, Musk</p>
+                <p><strong>Occasion:</strong> Romantic Dates</p>
+                <p><strong>Vibes:</strong> Bold, Sensual</p>
+                <p><strong>Celebrity Match:</strong> Zendaya</p>
+                <a href="https://soiparfums.com/products/scarlet?srsltid=AfmBOoqMr689BLgMXMpge4XUfbMh5CcjINPeZC9XmG7ftA23znGHgSvE">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="https://stylo.pk/cdn/shop/files/3_c7548e17-69a6-4228-be84-e0d2951f2103_1024x1024.jpg?v=1756913291" alt="Obsidian">
+            <div class="product-content">
+                <h3>Obsidian</h3>
+                <p><strong>Meaning:</strong> Dark Stone, Strength</p>
+                <p><strong>Notes:</strong> Vetiver, Leather, Black Pepper</p>
+                <p><strong>Occasion:</strong> Formal Nights</p>
+                <p><strong>Vibes:</strong> Powerful, Confident</p>
+                <p><strong>Celebrity Match:</strong> Keanu Reeves</p>
+                <a href="https://stylo.pk/products/dark-obsidian-perfume-for-men-pr1023?srsltid=AfmBOoomRarjDW4n7xOPk0155j7JdajridIpgd48alyZHj3IkOG_XbVH">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="https://www.skinfluenceofficial.com/cdn/shop/files/AADI2850.jpg?v=1701253661&width=1445" alt="Ember">
+            <div class="product-content">
+                <h3>Ember</h3>
+                <p><strong>Meaning:</strong> Smoldering Fire</p>
+                <p><strong>Notes:</strong> Tobacco, Vanilla, Patchouli</p>
+                <p><strong>Occasion:</strong> Winter Nights</p>
+                <p><strong>Vibes:</strong> Warm, Intense</p>
+                <p><strong>Celebrity Match:</strong> Jason Momoa</p>
+                <a href="https://www.skinfluenceofficial.com/products/luxury-bourbon-ember-perfume-for-men-100ml-eau-de-parfum-party-fragrance?srsltid=AfmBOooFLfqwoyC5z5ThpgwyPgNeSSszkHtNXPZPlmhjoEuRUquwsXKY">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src="https://mysiyate.com/cdn/shop/files/Ecomm_18.jpg?v=1761042903&width=1946" alt="Crimson">
+            <div class="product-content">
+                <h3>Crimson</h3>
+                <p><strong>Meaning:</strong> Deep Red Emotion</p>
+                <p><strong>Notes:</strong> Pomegranate, Red Berries, Cedarwood</p>
+                <p><strong>Occasion:</strong> Evening Dinners</p>
+                <p><strong>Vibes:</strong> Passionate, Energetic</p>
+                <p><strong>Celebrity Match:</strong> Rihanna</p>
+                <a href="https://mysiyate.com/products/crimson-souffle?srsltid=AfmBOops1eSQf7hNsOK44JIkuPQfCXGVNg7IAksqhvnCKBDDFbpwHf4I">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+            <img src="https://www.oxgnfashion.com/cdn/shop/files/926023-Blue_2.jpg?v=1692685166" alt="Nocturne">
+            <div class="product-content">
+                <h3>Nocturne</h3>
+                <p><strong>Meaning:</strong> Night Melody</p>
+                <p><strong>Notes:</strong> Jasmine, Musk, Amber</p>
+                <p><strong>Occasion:</strong> Night Events</p>
+                <p><strong>Vibes:</strong> Calm, Elegant</p>
+                <p><strong>Celebrity Match:</strong> Harry Styles</p>
+                <a href="https://www.oxgnfashion.com/products/nocturne-eau-de-toilette-for-men-50ml-926023-blue?srsltid=AfmBOop264OH8GGo-WE4E9hLoVR-V2A7SQu3_qhBh0ozez8mGJmLyy-w">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61D0UZyFDwL._AC_UF350,350_QL80_.jpg" alt="Raven">
+            <div class="product-content">
+                <h3>Raven</h3>
+                <p><strong>Meaning:</strong> Mystery & Wisdom</p>
+                <p><strong>Notes:</strong> Cedarwood, Leather, Clove</p>
+                <p><strong>Occasion:</strong> Office & Meetings</p>
+                <p><strong>Vibes:</strong> Smart, Sophisticated</p>
+                <p><strong>Celebrity Match:</strong> Angelina Jolie</p>
+                <a href="https://www.amazon.com/Ellis-Brooklyn-Raven-Eau-Parfum/dp/B01N25T4X8">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+            <img src="https://www.jiomart.com/images/product/original/rvuwue9gpq/next-care-velvet-oud-long-lasting-perfume-edp-100ml-saffron-ylang-ylang-musk-fragrance-notes-perfume-for-men-women-great-for-everyday-use-product-images-orvuwue9gpq-p611842136-5-202507051039.jpg?im=Resize=(420,420)" alt="Velvet">
+            <div class="product-content">
+                <h3>Velvet</h3>
+                <p><strong>Meaning:</strong> Soft Luxury</p>
+                <p><strong>Notes:</strong> Rosewood, Vanilla, Musk</p>
+                <p><strong>Occasion:</strong> Romantic Evenings</p>
+                <p><strong>Vibes:</strong> Elegant, Sensual</p>
+                <p><strong>Celebrity Match:</strong> Scarlett Johansson</p>
+                <a href="https://www.nextcareindia.com/products/next-care-luxury-velvet-oud-perfume-long-lasting-bold-fragrance-with-saffron-geranium-note-eau-de-parfum-100-ml-for-men-women?srsltid=AfmBOopXIcp9FctdUJEwc-ZxuUi9SthjT_ZJf4Nv-nRQXIcYkuAXrkUN">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <img src="https://www.naseemperfume.in/cdn/shop/files/Inferno_1.webp?v=1753337451&width=416" alt="Inferno">
+            <div class="product-content">
+                <h3>Inferno</h3>
+                <p><strong>Meaning:</strong> Burning Passion</p>
+                <p><strong>Notes:</strong> Chili, Amber, Sandalwood</p>
+                <p><strong>Occasion:</strong> Parties</p>
+                <p><strong>Vibes:</strong> Bold, Fiery</p>
+                <p><strong>Celebrity Match:</strong> Dwayne Johnson</p>
+                <a href="https://www.naseemperfume.in/products/inferno-80-ml?srsltid=AfmBOooew0GKjMQCCaZ9-cmpX5N9WnAq0ixmYVAzVapCusufHO9gY3Yh">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card">
+            <img src="https://circleoflim.com/wp-content/uploads/2024/08/KakaoTalk_20240416_153527688.jpg" alt="Oblivion">
+            <div class="product-content">
+                <h3>Oblivion</h3>
+                <p><strong>Meaning:</strong> Eternal Mystery</p>
+                <p><strong>Notes:</strong> Blackcurrant, Leather, Oud</p>
+                <p><strong>Occasion:</strong> Evening & Gala</p>
+                <p><strong>Vibes:</strong> Dark, Alluring</p>
+                <p><strong>Celebrity Match:</strong> Tom Hiddleston</p>
+                <a href="https://stele.nyc/products/circle-of-lim-oblivion-eau-de-parfum?srsltid=AfmBOorUGFPXFeoEUFQNKXaQKCtuuf8BzpOGKGmVb6E1HQqQUAOgayqp">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="product-card">
+            <img src="https://hausofhecate.com/cdn/shop/files/IMG-7455.jpg?v=1733409461&width=1000" alt="Bloodmoon">
+            <div class="product-content">
+                <h3>Bloodmoon</h3>
+                <p><strong>Meaning:</strong> Lunar Red Mystery</p>
+                <p><strong>Notes:</strong> Rose, Patchouli, Vanilla</p>
+                <p><strong>Occasion:</strong> Night Parties</p>
+                <p><strong>Vibes:</strong> Bold, Seductive</p>
+                <p><strong>Celebrity Match:</strong> Harry Styles</p>
+                <a href="https://hausofhecate.com/products/blood-moon-eau-de-parfum-50ml?srsltid=AfmBOor5ejUbMChmCvzHMLvGzD1CI5f6rs5RhnrYXOKT4sFmq7ve8UKw">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="product-card">
+            <img src="https://godofessence.com/cdn/shop/files/midnight-desire-extrait-de-parfum-for-men-9922732.jpg?v=1762438216&width=3840" alt="Midnight">
+            <div class="product-content">
+                <h3>Midnight</h3>
+                <p><strong>Meaning:</strong> Dark Elegance</p>
+                <p><strong>Notes:</strong> Jasmine, Musk, Sandalwood</p>
+                <p><strong>Occasion:</strong> Late Night Events</p>
+                <p><strong>Vibes:</strong> Elegant, Calm</p>
+                <p><strong>Celebrity Match:</strong> Audrey Hepburn</p>
+                <a href="https://godofessence.com/products/midnight-desire?srsltid=AfmBOooQq3Ivrj5hWjz9twJ1AO54JoT99H5lcJRYCQKcm-sju53yP82D">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 13 -->
+        <div class="product-card">
+            <img src="https://emiratesoud.co.uk/cdn/shop/files/Vulcan-Sable-Perfume-100ml-EDP-By-French-Avenue-169422220.jpg?v=1749774984&width=1946" alt="Sable">
+            <div class="product-content">
+                <h3>Sable</h3>
+                <p><strong>Meaning:</strong> Dark Luxury</p>
+                <p><strong>Notes:</strong> Leather, Vanilla, Oud</p>
+                <p><strong>Occasion:</strong> Special Occasions</p>
+                <p><strong>Vibes:</strong> Luxurious, Powerful</p>
+                <p><strong>Celebrity Match:</strong> Idris Elba</p>
+                <a href="https://emiratesoud.co.uk/products/vulcan-sable-french-avenue#">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 14 -->
+        <div class="product-card">
+            <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/perfume/d/o/h/100-twilight-perfume-premium-fragrance-captivating-luxury-scent-original-imah2hjfzamc8ksd.jpeg?q=90" alt="Twilight">
+            <div class="product-content">
+                <h3>Twilight</h3>
+                <p><strong>Meaning:</strong> Dusk Serenity</p>
+                <p><strong>Notes:</strong> Lavender, Bergamot, Musk</p>
+                <p><strong>Occasion:</strong> Evening Walks</p>
+                <p><strong>Vibes:</strong> Calm, Romantic</p>
+                <p><strong>Celebrity Match:</strong> Emma Watson</p>
+                <a href="https://www.flipkart.com/whiskers-twilight-perfume-premium-fragrance-captivating-luxury-scent-men-women-eau-de-parfum-100-ml/p/itm2249585cae9b3">View More</a>
+            </div>
+        </div>
+
+        <!-- Product 15 -->
+        <div class="product-card">
+            <img src="https://www.westside.com/cdn/shop/files/301026056001_1.jpg?v=1761137321&width=1445" alt="Ashes">
+            <div class="product-content">
+                <h3>Ashes</h3>
+                <p><strong>Meaning:</strong> Beauty in Decay</p>
+                <p><strong>Notes:</strong> Smoke, Amber, Sandalwood</p>
+                <p><strong>Occasion:</strong> Night Out</p>
+                <p><strong>Vibes:</strong> Mysterious, Bold</p>
+                <p><strong>Celebrity Match:</strong> Lady Gaga</p>
+                <a href="https://www.westside.com/products/studiowest-ash-eau-de-parfum-100-ml-301026056001?srsltid=AfmBOoptsS7ZMGEVlVo1pUe-QiuZfLpmraa5he5dnpA5GJ7foBKOf4u6">View More</a>
+            </div>
+         
+
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2025 Dead Rose Perfumes | All Rights Reserved
+    </footer>
+
+</body>
+</html>
